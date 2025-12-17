@@ -1,0 +1,226 @@
+/**
+ * Token Automation Manager - Styles
+ */
+
+/* Token HUD Button */
+.token-hud .control-icon[data-action="toggle-auto-init"] {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #999;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.token-hud .control-icon[data-action="toggle-auto-init"]:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.token-hud .control-icon[data-action="toggle-auto-init"].active {
+  background: rgba(0, 255, 0, 0.3);
+  border-color: #0f0;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+}
+
+.token-hud .control-icon[data-action="toggle-auto-init"].active i {
+  color: #0f0;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 1);
+}
+
+.token-hud .control-icon[data-action="toggle-auto-init"] i {
+  color: #fff;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* Visual indicators on tokens */
+.auto-init-indicator {
+  pointer-events: none;
+  filter: drop-shadow(0 0 3px rgba(0, 255, 0, 0.8));
+}
+
+/* Settings form styling */
+.token-automation-manager-settings {
+  padding: 10px;
+}
+
+.token-automation-manager-settings .form-group {
+  margin-bottom: 15px;
+}
+
+.token-automation-manager-settings label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.token-automation-manager-settings .notes {
+  font-size: 0.9em;
+  color: #999;
+  font-style: italic;
+  margin-top: 3px;
+}
+
+/* Dialog styling */
+.token-automation-dialog {
+  min-width: 400px;
+}
+
+.token-automation-dialog .dialog-content {
+  padding: 20px;
+}
+
+.token-automation-dialog .dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #999;
+}
+
+.token-automation-dialog button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.token-automation-dialog button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Status indicator styles */
+.token-automation-status {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.token-automation-status.enabled {
+  filter: drop-shadow(0 0 4px rgba(0, 255, 0, 0.8));
+  opacity: 0.9;
+}
+
+/* Animation for initiative rolling */
+@keyframes roll-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+.rolling-initiative {
+  animation: roll-pulse 0.5s ease-in-out;
+}
+
+/* Combat tracker integration */
+.combat-tracker .combatant.auto-init::before {
+  content: "\f6cf"; /* Font Awesome d20 icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #0f0;
+  margin-right: 5px;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.8);
+}
+
+/* Tooltip styling */
+.token-automation-tooltip {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid #0f0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Notification styles */
+.token-automation-notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.95);
+  border: 2px solid #0f0;
+  border-radius: 8px;
+  padding: 20px 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  z-index: 10000;
+  animation: fade-in-out 2s ease-in-out;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+/* Future: Action Queue Editor styles (Phase 2) */
+.action-queue-editor {
+  min-width: 600px;
+  min-height: 400px;
+}
+
+.action-queue-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.action-queue-item {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: move;
+  transition: all 0.2s ease;
+}
+
+.action-queue-item:hover {
+  background: rgba(0, 0, 0, 0.5);
+  border-color: #999;
+}
+
+.action-queue-item.disabled {
+  opacity: 0.5;
+}
+
+/* Drag and drop styles */
+.action-queue-item.dragging {
+  opacity: 0.5;
+  transform: rotate(2deg);
+}
+
+.action-queue-item.drag-over {
+  border-color: #0f0;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}

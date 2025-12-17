@@ -1,0 +1,36 @@
+{
+  "TAM.ModuleName": "Token Automation Manager",
+  
+  "TAM.Settings.EnableVisualIndicator.Name": "Enable Visual Indicator",
+  "TAM.Settings.EnableVisualIndicator.Hint": "Display a d20 icon on tokens that have auto-initiative enabled",
+  
+  "TAM.Settings.EnableSound.Name": "Enable Sound Effects",
+  "TAM.Settings.EnableSound.Hint": "Play sound effects when auto-initiative is rolled",
+  
+  "TAM.Settings.RollDelay.Name": "Roll Delay (ms)",
+  "TAM.Settings.RollDelay.Hint": "Delay in milliseconds between each initiative roll. Set to 0 for instant rolling.",
+  
+  "TAM.Settings.UseMidiQOL.Name": "Use MIDI QOL Integration",
+  "TAM.Settings.UseMidiQOL.Hint": "Respect MIDI QOL's advantage/disadvantage settings when rolling initiative (requires MIDI QOL module)",
+  
+  "TAM.Settings.DebugMode.Name": "Debug Mode",
+  "TAM.Settings.DebugMode.Hint": "Enable detailed console logging for troubleshooting",
+  
+  "TAM.HUD.ToggleAutoInit": "Toggle Auto-Initiative",
+  
+  "TAM.Notifications.Enabled": "Auto-initiative enabled for {name}",
+  "TAM.Notifications.Disabled": "Auto-initiative disabled for {name}",
+  "TAM.Notifications.Error": "Error toggling auto-initiative",
+  "TAM.Notifications.InitiativeRolled": "Auto-rolled initiative for {count} combatant(s)",
+  "TAM.Notifications.NoCombat": "No active combat to roll initiative for",
+  "TAM.Notifications.NoAutoInitTokens": "No tokens with auto-initiative found in current combat",
+  "TAM.Notifications.InitiativeReset": "Reset initiative for {count} auto-init combatant(s)",
+  
+  "TAM.StatusEffect.AutoInitiative": "Auto-Initiative Enabled",
+  
+  "TAM.Dialog.Title": "Token Automation Manager",
+  "TAM.Dialog.EnableForSelected": "Enable auto-initiative for selected tokens",
+  "TAM.Dialog.DisableForSelected": "Disable auto-initiative for selected tokens",
+  "TAM.Dialog.EnableForAll": "Enable auto-initiative for all tokens in scene",
+  "TAM.Dialog.DisableForAll": "Disable auto-initiative for all tokens in scene"
+}
