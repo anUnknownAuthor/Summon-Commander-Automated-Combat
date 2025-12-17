@@ -15,14 +15,18 @@ A Foundry VTT module that automates token actions, starting with selective auto-
 - **Sound Effects**: Optional sound feedback when initiative is rolled
 - **Batch Operations**: Enable/disable auto-initiative for multiple tokens at once
 
-### Phase 2: Automated Turn Actions (Coming Soon)
+### Phase 2: Automated Turn Actions (Core Systems Complete - UI Coming Soon)
 
-- Pre-programmed movement paths
-- Automated attack sequences
-- Conditional action logic
-- Resource tracking and validation
-- Full MIDI QOL and DAE integration
-- Manual override controls
+- ✅ **Pre-programmed Action Queues**: Store sequences of actions per token
+- ✅ **Movement Path Recording**: Record and replay movement patterns
+- ✅ **Automated Attack System**: Smart target selection with priority
+- ✅ **Conditional Logic Engine**: Execute actions based on conditions (HP, resources, attack results)
+- ✅ **Resource Tracking**: Validate spell slots, item uses, and resources before execution
+- ✅ **Full MIDI QOL Integration**: Leverage MIDI workflows for attacks and damage
+- ✅ **Manual Override**: Emergency stop and status monitoring
+- 🚧 **Visual Editor UI**: Coming in v0.2.0 (currently accessible via console API)
+
+**Note**: Phase 2 backend is fully functional. See [QUICKSTART.md](QUICKSTART.md) for API examples and usage.
 
 ## Installation
 
@@ -172,14 +176,17 @@ These are development warnings and can be safely ignored. They don't affect func
 - [x] MIDI QOL integration
 - [x] Settings and localization
 
-### Phase 2: Turn Actions (In Development)
+### Phase 2: Turn Actions ✅ CORE COMPLETE
 
-- [ ] Action queue data structure
-- [ ] Movement path recording
-- [ ] Attack automation
-- [ ] Conditional logic engine
-- [ ] Resource validation
-- [ ] Queue editor UI
+- [x] Action queue data structure
+- [x] Movement path recording
+- [x] Attack automation
+- [x] Conditional logic engine
+- [x] Resource validation
+- [x] MIDI QOL workflow integration
+- [ ] Queue editor UI (v0.2.0)
+
+**Status**: Backend complete and functional via API. Visual editor UI scheduled for v0.2.0.
 
 ### Future Enhancements
 

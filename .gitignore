@@ -1,0 +1,33 @@
+# Node modules (if using build tools in future)
+node_modules/
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts (future use)
+dist/
+build/
+*.zip
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+.cache/
+
+# Environment
+.env
+.env.local

@@ -32,5 +32,45 @@
   "TAM.Dialog.EnableForSelected": "Enable auto-initiative for selected tokens",
   "TAM.Dialog.DisableForSelected": "Disable auto-initiative for selected tokens",
   "TAM.Dialog.EnableForAll": "Enable auto-initiative for all tokens in scene",
-  "TAM.Dialog.DisableForAll": "Disable auto-initiative for all tokens in scene"
+  "TAM.Dialog.DisableForAll": "Disable auto-initiative for all tokens in scene",
+  
+  "TAM.ActionQueue.Title": "Action Queue Editor",
+  "TAM.ActionQueue.AddAction": "Add Action",
+  "TAM.ActionQueue.RemoveAction": "Remove Action",
+  "TAM.ActionQueue.ClearQueue": "Clear All Actions",
+  "TAM.ActionQueue.ExportQueue": "Export Queue",
+  "TAM.ActionQueue.ImportQueue": "Import Queue",
+  "TAM.ActionQueue.EnableQueue": "Enable Action Queue",
+  "TAM.ActionQueue.DisableQueue": "Disable Action Queue",
+  
+  "TAM.Actions.Movement": "Movement",
+  "TAM.Actions.Attack": "Attack",
+  "TAM.Actions.Spell": "Spell",
+  "TAM.Actions.Item": "Use Item",
+  "TAM.Actions.BonusAction": "Bonus Action",
+  "TAM.Actions.Reaction": "Reaction",
+  "TAM.Actions.EndTurn": "End Turn",
+  
+  "TAM.Movement.RecordPath": "Record Movement Path",
+  "TAM.Movement.StopRecording": "Stop Recording",
+  "TAM.Movement.ClearPath": "Clear Path",
+  
+  "TAM.Notifications.MovementRecordingStart": "Click on the canvas to record waypoints. Right-click to finish.",
+  "TAM.Notifications.MovementRecordingStop": "Movement path recorded",
+  "TAM.Notifications.ActionsExecuted": "Executed {count} action(s) for {name}",
+  "TAM.Notifications.ActionExecutionError": "Error executing actions",
+  
+  "TAM.Conditions.Always": "Always",
+  "TAM.Conditions.TargetInRange": "Target in Range",
+  "TAM.Conditions.ResourceAvailable": "Resource Available",
+  "TAM.Conditions.HPThreshold": "HP Threshold",
+  "TAM.Conditions.AttackHit": "Previous Attack Hit",
+  "TAM.Conditions.AttackMiss": "Previous Attack Missed",
+  
+  "TAM.TargetPriority.Nearest": "Nearest Enemy",
+  "TAM.TargetPriority.Furthest": "Furthest Enemy",
+  "TAM.TargetPriority.LowestHP": "Lowest HP",
+  "TAM.TargetPriority.HighestHP": "Highest HP",
+  "TAM.TargetPriority.LowestAC": "Lowest AC",
+  "TAM.TargetPriority.HighestAC": "Highest AC"
 }

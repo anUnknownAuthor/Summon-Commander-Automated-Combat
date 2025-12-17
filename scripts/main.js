@@ -7,6 +7,10 @@ import { TokenManager } from './token-manager.js';
 import { CombatHooks } from './combat-hooks.js';
 import { InitiativeRoller } from './initiative-roller.js';
 import { UIElements } from './ui-elements.js';
+import { ActionQueueManager } from './action-queue.js';
+import { ActionExecutor } from './action-executor.js';
+import { AttackSystem } from './attack-system.js';
+import { MovementSystem } from './movement-system.js';
 
 // Module constants
 const MODULE_ID = 'token-automation-manager';
@@ -39,9 +43,16 @@ Hooks.once('setup', () => {
   
   // Initialize managers
   game.tokenAutomation = {
+    // Phase 1: Auto-Initiative
     tokenManager: new TokenManager(),
     initiativeRoller: new InitiativeRoller(),
-    uiElements: new UIElements()
+    uiElements: new UIElements(),
+    
+    // Phase 2: Automated Turn Actions
+    actionQueueManager: new ActionQueueManager(),
+    actionExecutor: new ActionExecutor(),
+    attackSystem: new AttackSystem(),
+    movementSystem: new MovementSystem()
   };
 });
 
@@ -53,6 +64,9 @@ Hooks.once('ready', () => {
   
   // Initialize combat hooks
   CombatHooks.init();
+  
+  // Initialize action executor (Phase 2)
+  game.tokenAutomation.actionExecutor.init();
   
   // Display ready message to GM
   if (game.user.isGM) {
