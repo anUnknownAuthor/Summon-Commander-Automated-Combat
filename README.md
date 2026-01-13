@@ -43,7 +43,7 @@ A Foundry VTT module that automates token actions, starting with selective auto-
 2. Click **Install Module**
 3. Paste this URL in the **Manifest URL** field:
    ```
-   https://github.com/anUnknownAuthor/Summon-Commander-Automated-Combat/blob/main/module.json
+   https://raw.githubusercontent.com/anUnknownAuthor/Summon-Commander-Automated-Combat/refs/heads/main/module.json
    ```
 4. Click **Install**
 
